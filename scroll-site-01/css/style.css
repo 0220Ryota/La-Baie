@@ -1,0 +1,684 @@
+@charset "utf-8";
+@media only screen and (min-width: 768px) {
+  /* Loading背景画面設定　*/
+  #splash {
+    /*fixedで全面に固定*/
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    color: #fff;
+  }
+
+  /* Loading画像中央配置　*/
+  #splash_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Loading アイコンの大きさ設定　*/
+  #splash_logo img {
+    width: 260px;
+  }
+
+  /* fadeUpをするアイコンの動き */
+
+  .fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+
+  @keyframes fadeUpAnime {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* 動き */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+  .outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .wrapper {
+    display: flex;
+    width: 803vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+  }
+  .home_slide {
+    width: 120vw;
+    height: 100vh;
+  }
+  .home_img {
+    width: 120vw;
+    height: 100vh;
+  }
+  .about_slide {
+    width: 140vw;
+    height: 100vh;
+  }
+  .building_slide {
+    width: 80vw;
+    height: 100vh;
+  }
+  .scene_slide {
+    width: 90vw;
+    height: 100vh;
+  }
+  .slide_chef {
+    width: 50vw;
+    height: 100vh;
+  }
+  .menu_slide {
+    width: 110vw;
+    height: 100vh;
+  }
+  .contact_slide {
+    width: 130vw;
+    height: 100vh;
+  }
+  .reserve_slide {
+    width: 93vw;
+    height: 100vh;
+  }
+
+  .one {
+    background: url(../images/画像素材/10.jpg);
+    position: absolute;
+    z-index: 1;
+    background-size: cover;
+  }
+  .two {
+    background: rgb(255, 255, 255);
+    background-size: cover;
+  }
+  .three {
+    background: rgb(255, 255, 255);
+    background-size: cover;
+  }
+  .four {
+    background: rgb(255, 255, 255);
+    background-size: cover;
+  }
+  .five {
+    background: url(../images/画像素材/27.jpg);
+    background-size: cover;
+  }
+  .six {
+    background: rgb(255, 255, 255);
+    background-size: cover;
+  }
+  .seven {
+    background: rgb(255, 255, 255);
+    background-size: cover;
+  }
+  .eight {
+    background: url(../images/画像素材/03.jpg);
+    background-size: cover;
+  }
+  /* 動き終わり */
+
+  /* 文字 */
+  h1 {
+    font-size: 40px;
+    color: #000;
+  }
+  h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #606060;
+  }
+  h3 {
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 1px 2px 3px #808080;
+  }
+  h4 {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #606060;
+  }
+  h5 {
+    font-size: 13px;
+    color: #000;
+    margin-top: 90vh;
+    padding-left: 50px;
+  }
+  p {
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #727272;
+  }
+  .more a {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #9f9f9f;
+    border-bottom: solid 2px #9f9f9f;
+  }
+  /* 文字終わり */
+
+  /* 画像 */
+  img {
+    width: 280px;
+    height: 180px;
+  }
+  /* 画像終わり */
+
+  /* ナビゲーション */
+  .res_logo {
+    display: none;
+  }
+  #nav {
+    height: 100px;
+    width: 100vh;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  li {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  li a {
+    font-size: 18px;
+    color: #707070;
+  }
+  .logo {
+    width: 165px;
+    height: auto;
+  }
+  /* ナビゲーション終わり */
+
+  /* ホーム */
+  .home {
+    position: relative;
+  }
+  .home_block {
+    width: 500px;
+    height: 100vh;
+    margin-left: 100px;
+    position: absolute;
+    background-color: white;
+    z-index: 2;
+  }
+  .home_ex {
+    text-align: left;
+    margin-top: 35vh;
+  }
+  .home_ex h1 {
+    margin-bottom: 45px;
+  }
+  /* ホーム終わり */
+
+  /* アバウト */
+  .about {
+    display: flex;
+    justify-content: left;
+    margin-left: 50px;
+  }
+
+  .about_img_first {
+    left: 0;
+    margin-top: 25vh;
+    position: relative;
+  }
+  .about_img_01 {
+    position: absolute;
+    z-index: 2;
+  }
+  .about_img_02 {
+    position: absolute;
+    top: 20vh;
+    margin-left: 180px;
+    z-index: 1;
+  }
+  .about_img_first h3 {
+    position: absolute;
+    top: 40vh;
+    margin-left: 130px;
+    z-index: 3;
+  }
+  .about_ex {
+    position: relative;
+    margin-top: 25vh;
+    margin-left: 510px;
+  }
+  .about_ex_first {
+    position: relative;
+    margin-top: 25vh;
+    margin-right: 50px;
+  }
+  .about_img_second {
+    position: relative;
+    margin-top: 25vh;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .about_img_03 {
+    position: absolute;
+  }
+  .about_img_04 {
+    position: absolute;
+    margin-top: 8vh;
+    margin-left: 330px;
+  }
+  .about_img_05 {
+    position: absolute;
+    margin-top: 18vh;
+    margin-left: 650px;
+  }
+  /* アバウト終わり */
+
+  /* 建物 */
+  .building {
+    display: flex;
+    justify-content: left;
+  }
+
+  .building_img {
+    left: 0;
+    margin-top: 25vh;
+    position: relative;
+  }
+  .building_img_01 {
+    position: absolute;
+    z-index: 2;
+  }
+  .building_img_02 {
+    position: absolute;
+    top: 20vh;
+    margin-left: 180px;
+    z-index: 1;
+  }
+  .building_img h3 {
+    position: absolute;
+    top: 40vh;
+    margin-left: 130px;
+    z-index: 3;
+  }
+  /* 建物終わり */
+
+  /* シーン */
+  .scene {
+    display: flex;
+    justify-content: left;
+  }
+
+  .scene_img {
+    left: 0;
+    margin-top: 25vh;
+    position: relative;
+  }
+  .scene_img_01 {
+    position: absolute;
+    z-index: 2;
+  }
+  .scene_img_02 {
+    position: absolute;
+    top: 20vh;
+    margin-left: 180px;
+    z-index: 1;
+  }
+  .scene_img h3 {
+    position: absolute;
+    top: 40vh;
+    margin-left: 130px;
+    z-index: 3;
+  }
+  .scene_plan {
+    position: absolute;
+    top: 27vh;
+    margin-left: 1010px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .plan_title {
+    font-size: 20px;
+  }
+  /* シーン終わり */
+
+  /* メニュー */
+  .menu {
+    display: flex;
+    justify-content: left;
+  }
+
+  .menu_img {
+    left: 0;
+    margin-top: 25vh;
+    position: relative;
+  }
+
+  .menu_img_01 {
+    position: absolute;
+    z-index: 2;
+  }
+  .menu_img_02 {
+    position: absolute;
+    top: 20vh;
+    margin-left: 180px;
+    z-index: 1;
+  }
+  .menu_img_03 {
+    position: absolute;
+    top: 10vh;
+    margin-left: 530px;
+  }
+  .menu_img h3 {
+    position: absolute;
+    top: 40vh;
+    margin-left: 130px;
+    z-index: 3;
+  }
+  /* メニュー終わり */
+
+  /* コンタクト */
+  .contact {
+    display: flex;
+    justify-content: left;
+  }
+
+  .news {
+    margin-top: 35vh;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .news_ex a {
+    font-size: 20px;
+    color: #727272;
+    border-bottom: solid 2px #727272;
+  }
+
+  .info {
+    margin-top: 32vh;
+    margin-left: 50px;
+  }
+  .info_ex {
+    font-size: 20px;
+  }
+  /* コンタクト終わり */
+
+  /* 予約フォーム */
+  .reserve_block {
+    text-align: center;
+    margin-top: 40vh;
+  }
+  .form a,
+  .reserve_block h1 {
+    color: white;
+    text-shadow: 1px 2px 3px #808080;
+  }
+  .reserve_block h1 {
+    font-size: 35px;
+  }
+  .form a {
+    font-size: 40px;
+    border-bottom: solid 4px #fff;
+  }
+  /* 予約フォーム終わり */
+}
+@media only screen and (max-width: 767px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* 要素を消す */
+  #splash {
+    display: none;
+  }
+
+  body {
+    width: 100%;
+    padding-left: 0;
+  }
+  img {
+    width: 180px;
+    height: 100px;
+  }
+  p {
+    font-size: 15px;
+    color: #727272;
+  }
+  .more a {
+    font-size: 15px;
+    color: #727272;
+    border-bottom: solid 2px #707070;
+  }
+  a {
+    text-decoration: none;
+  }
+  h5,
+  h3 {
+    display: none;
+  }
+
+  /* ナビゲーション */
+
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    text-align: center;
+    padding-left: 0;
+  }
+  li {
+    list-style: none;
+    margin-right: 1vh;
+  }
+  .full_logo {
+    display: none;
+  }
+  .res_logo {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  /* 外枠設定 */
+  .outer-wrapper {
+    width: auto;
+  }
+  .wrapper {
+    padding-left: 0;
+  }
+
+  /* ホーム */
+  .home {
+    background-image: url(../images/画像素材/10.jpg);
+    width: 100%;
+  }
+  .home_ex h1 {
+    font-size: 40px;
+    color: white;
+    text-shadow: 3px 4px 5px #808080;
+    text-align: center;
+  }
+  .home_ex p {
+    font-size: 20px;
+    color: white;
+    text-shadow: 3px 4px 5px #000;
+    text-align: center;
+  }
+  /* ホーム終わり */
+
+  /* アバウト */
+  .about {
+    margin-top: 30px;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    margin-bottom: 30px;
+  }
+
+  .about_img_first {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  .about_img_01,
+  .about_img_02 {
+    width: 50%;
+    max-width: 220px;
+    height: auto;
+  }
+  h4 {
+    font-size: 30px;
+    color: white;
+    text-shadow: 3px 4px 5px #808080;
+  }
+  .about_ex {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .about_img_second,
+  .menu_img {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .about_img_03,
+  .about_img_04,
+  .about_img_05,
+  .menu_img_01,
+  .menu_img_02,
+  .menu_img_03 {
+    width: 33%;
+    max-width: 200px;
+    height: auto;
+  }
+
+  /* アバウト終わり */
+
+  /* 建物 */
+  .building {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  .building_img {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .building_img_01,
+  .building_img_02 {
+    width: 50%;
+    max-width: 250px;
+    height: auto;
+  }
+  /* 建物終わり */
+
+  /* シーン */
+  .about_ex_first {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .about_ex_first h4 {
+    margin-top: 30px;
+  }
+  .scene_img {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .scene_img_01,
+  .scene_img_02 {
+    width: 50%;
+    max-width: 250px;
+    height: auto;
+  }
+  .scene_plan {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  /* シーン終わり */
+
+  /* コンタクト */
+  .news {
+    margin-bottom: 30px;
+  }
+  .news_ex a {
+    font-size: 15px;
+    color: #727272;
+    border-bottom: solid 1px #707070;
+  }
+  .news_ex {
+    margin-top: 10px;
+  }
+  .info_ex {
+    margin-bottom: 10px;
+  }
+  /* コンタクト終わり */
+
+  /* 予約フォーム */
+  .reserve_slide {
+    background: url(../images/画像素材/03.jpg);
+    background-size: cover;
+  }
+  .reserve_block h1 {
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+  }
+  .form {
+    text-align: center;
+    padding: 20px;
+  }
+  .form a {
+    font-size: 15px;
+    color: white;
+    border-bottom: solid 1px #707070;
+  }
+  /* 予約フォーム終わり */
+}

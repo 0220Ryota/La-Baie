@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="jquery.mousewheel.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="splash">
+      <div id="splash_logo">
+        <img src="images/La Baie_LOGO.png" alt="" class="fadeUp" />
+      </div>
+    </div>
+    <nav>
+      <div id="nav">
+        <div class="res_logo">
+          <a href="#home"><img src="images/La Baie_LOGO.png" alt="ロゴ" /></a>
+        </div>
+        <ul>
+          <li class="full_logo">
+            <a href="#home"
+              ><img src="images/La Baie_LOGO.png" class="logo" alt="ロゴ"
+            /></a>
+          </li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#building">Building</a></li>
+          <li><a href="#scene">Scene</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="outer-wrapper">
+      <div class="wrapper">
+        <!-- ホーム -->
+        <div class="slide home home_slide" id="home">
+          <div class="one slide home_img"></div>
+          <div class="home_block">
+            <div class="home_ex">
+              <h1>美味しい食材に<br />国境をつくらない</h1>
+              <p>日本とフランスの料理を融合させた独自のコロニアルスタイル</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- アバウト -->
+        <div class="slide two about about_slide" id="about">
+          <h5>01.About</h5>
+          <div class="about_img_first">
+            <img
+              src="images/画像素材/14.jpg"
+              class="about_img_01"
+              alt="詳細イメージ01"
+            />
+            <img
+              src="images/画像素材/15.jpg"
+              class="about_img_02"
+              alt="詳細イメージ02"
+            />
+            <h3>About</h3>
+          </div>
+          <div class="about_ex">
+            <h4>About</h4>
+            <h2>ラベは横浜山手に店舗を構える<br />フランス料理のお店です。</h2>
+            <p>
+              ラベは、お客様おひとりおひとりを、<br />
+              大切にお迎えしたいと考えています。
+            </p>
+            <p class="more"><a href="#">Read More</a></p>
+          </div>
+          <div class="about_img_second">
+            <img
+              src="images/画像素材/15.jpg"
+              class="about_img_03"
+              alt="詳細イメージ03"
+            />
+            <img
+              src="images/画像素材/29.jpg"
+              class="about_img_04"
+              alt="詳細イメージ04"
+            />
+            <img
+              src="images/画像素材/36.jpg"
+              class="about_img_05"
+              alt="詳細イメージ05"
+            />
+          </div>
+        </div>
+
+        <!-- 建物紹介 -->
+        <div class="slide three building building_slide" id="building">
+          <h5>02.Building</h5>
+          <div class="building_img">
+            <img
+              src="images/画像素材/42.jpg"
+              class="building_img_01"
+              alt="詳細イメージ01"
+            />
+            <img
+              src="images/画像素材/49.jpg"
+              class="building_img_02"
+              alt="詳細イメージ02"
+            />
+            <h3>Building</h3>
+          </div>
+          <div class="about_ex">
+            <h4>Building</h4>
+            <h2>
+              都会に現れる、白い壁に<br />
+              大きなテラスをもった建物
+            </h2>
+            <p>
+              アジアとヨーロッパ人のスタイルが<br />
+              融合したもの
+            </p>
+            <p class="more"><a href="#">Read More</a></p>
+          </div>
+        </div>
+
+        <!-- シーン -->
+        <div class="slide four scene scene_slide" id="scene">
+          <h5>03.Scene</h5>
+          <div class="about_ex_first">
+            <h4>Scene</h4>
+            <h2>
+              お客様の様々な<br />
+              利用方法・シーンを紹介
+            </h2>
+            <p>
+              ラベは、お客様おひとりおひとりを、<br />
+              大切にお迎えしたいと考えています。
+            </p>
+            <p class="more"><a href="#">Read More</a></p>
+          </div>
+          <div class="scene_img">
+            <img
+              src="images/画像素材/20.jpg"
+              class="scene_img_01"
+              alt="詳細イメージ01"
+            />
+            <img
+              src="images/画像素材/21.jpg"
+              class="scene_img_02"
+              alt="詳細イメージ02"
+            />
+            <h3>Scene</h3>
+          </div>
+          <div class="scene_plan">
+            <p class="plan_title">01.ビジネスや接待</p>
+            <p class="plan_title">02.家族のお祝い事</p>
+            <p class="plan_title">03.結婚式・結納</p>
+            <p class="plan_title">04.記念日に</p>
+            <p class="plan_title">05.各種パーティーなど</p>
+          </div>
+        </div>
+
+        <!-- シェフの画像 -->
+        <div class="slide_chef five"></div>
+
+        <!-- メニュー -->
+        <div class="slide six menu menu_slide" id="menu">
+          <h5>04.Menu</h5>
+          <div class="about_ex_first">
+            <h4>Menu</h4>
+            <h2>
+              料理のコンセプトは、食材の融合<br />
+              食材に国境をつくらない
+            </h2>
+            <p>
+              フランス、スイスと数々の3つ星レストランで修業を重ねた<br />
+              シェフが繰り広げる料理
+            </p>
+            <p class="more"><a href="#">Read More</a></p>
+          </div>
+          <div class="menu_img">
+            <img
+              src="images/画像素材/19.jpg"
+              class="menu_img_01"
+              alt="詳細イメージ01"
+            />
+            <img
+              src="images/画像素材/26.jpg"
+              class="menu_img_02"
+              alt="詳細イメージ02"
+            />
+            <img
+              src="images/画像素材/56.jpg"
+              class="menu_img_03"
+              alt="詳細イメージ03"
+            />
+            <h3>Menu</h3>
+          </div>
+        </div>
+
+        <!-- コンタクト -->
+        <div class="slide seven contact contact_slide" id="contact">
+          <h5>05.Contact</h5>
+          <div class="about_ex_first">
+            <h4>Contact</h4>
+            <h2>
+              ラベは横浜山手に店舗を構える<br />
+              フランス料理のお店です。
+            </h2>
+            <p>
+              ラベは、お客様おひとりおひとりを、<br />
+              大切にお迎えしたいと考えています。
+            </p>
+            <p class="more"><a href="#">Contact Form</a></p>
+          </div>
+          <div class="news">
+            <p class="news_ex"><a href="#">2019/04/13 横浜山手より。</a></p>
+            <p class="news_ex">
+              <a href="#">2019/04/11 2011 ラベシェフ日記。No01</a>
+            </p>
+            <p class="news_ex"><a href="#">2019/04/07 春のメニュー。</a></p>
+          </div>
+          <div class="info">
+            <p class="info_ex">
+              営業時間 : ランチ（11:30～14:00）・ディナー（17:30～21:00）
+            </p>
+            <p class="info_ex">定休日 : 月曜日（月曜祝日の場合火曜日）</p>
+            <p class="info_ex">パーキングあり（10台）</p>
+            <p class="info_ex">電話番号 : 078-262-6650</p>
+          </div>
+        </div>
+
+        <!-- 予約フォーム -->
+        <div class="slide eight reserve_slide">
+          <div class="reserve_block">
+            <blockquote>
+              <h1>
+                I want you to spend a relaxing time. <br />
+                That is our stance.
+              </h1>
+            </blockquote>
+            <p class="form"><a href="#">予約フォームへ</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Google提供のjQueryはこんな書き方-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Microsoft提供のjQueryはこんな書き方-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.js"></script>
+    <script src="js/scroll.js"></script>
+  </body>
+</html>
